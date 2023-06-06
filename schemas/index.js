@@ -7,7 +7,10 @@ import exploreService from './exploreService'
 import meetIdeologyLeader from './meetIdeologyLeader'
 import cityCouncil from './cityCouncil'
 import homeNews from './homeNews'
-
+import harariNews from './harariNews';
+import nationalNews from './nationalNews';
+import africaNews from './africaNews';
+import internationalNews from './internationalNews';
 export const schemaTypes = [
     post,
      author,
@@ -17,5 +20,9 @@ export const schemaTypes = [
      meetIdeologyLeader,
      cityCouncil,
      homeNews,
+     harariNews,
+     nationalNews,
+     africaNews,
+     internationalNews,
     blockContent
     ]
