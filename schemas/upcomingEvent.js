@@ -24,9 +24,33 @@ export default defineType({
             type: 'slug',
             options: {
               source: 'title',
-              maxLength: 96,
+              maxLength: 100,
             },
           }),
+          {
+            name: 'description',
+            title: 'Description',
+            type: 'array',
+            of: [
+              {
+                type: 'block',
+                styles: [],
+                lists: [],
+                marks: {
+                  decorators: [
+                    { title: 'Strong', value: 'strong' },
+                    { title: 'Emphasis', value: 'em' },
+                  ],
+                },
+              },
+              {
+                type: 'image',
+                options: { hotspot: true },
+              },
+            ],
+            validation: (Rule) =>
+              Rule.required().max(500).error('news must be within 500 characters.'),
+          },
           defineField({
             name: 'date',
             title: 'Date',

@@ -11,6 +11,8 @@ import harariNews from './harariNews';
 import nationalNews from './nationalNews';
 import africaNews from './africaNews';
 import internationalNews from './internationalNews';
+import documents from './documents';
+import leaders from './leaders';
 export const schemaTypes = [
     post,
      author,
@@ -24,5 +26,7 @@ export const schemaTypes = [
      nationalNews,
      africaNews,
      internationalNews,
+     documents,
+     leaders,
     blockContent
     ]
